@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Tp2",
       theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.pink),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
           useMaterial3: true),
       home: Home(),
     );
@@ -47,27 +47,45 @@ class _HomeState extends State<Home> {
         title: const Text("home Page"),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
-        body: Center(
-          child: ListView(
-            children: const [
-              ListTile(
-                leading: Icon(Icons.car_rental),
-                title: Text("Car"),
-                trailing: Icon(Icons.more_vert),
-              ),
-              ListTile(
-                leading: Icon(Icons.train),
-                title: Text("Train"),
-                trailing: Icon(Icons.more_vert),
-              ),
-              ListTile(
-                leading: Icon(Icons.flight),
-                title: Text("Flight"),
-                trailing: Icon(Icons.more_vert),
-              ),
-            ],
-          ),
+
+      body:const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Icon(Icons.headphones),
+            Icon(Icons.search),
+            Icon(Icons.chat),
+            
+          ],
         ),
+      ) ,
+
+
+
+        // body: Center(
+        //   child: ListView(
+        //     children: const [
+        //       ListTile(
+        //         leading: Icon(Icons.car_rental),
+        //         title: Text("Car"),
+        //         trailing: Icon(Icons.more_vert),
+        //       ),
+        //       ListTile(
+        //         leading: Icon(Icons.train),
+        //         title: Text("Train"),
+        //         trailing: Icon(Icons.more_vert),
+        //       ),
+        //       ListTile(
+        //         leading: Icon(Icons.flight),
+        //         title: Text("Flight"),
+        //         trailing: Icon(Icons.more_vert),
+        //       ),
+        //     ],
+        //   ),
+        // ),
+
+
+
       // body: list[_page],
       // body: IndexedStack(
       //   index: _page,
