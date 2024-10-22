@@ -47,7 +47,28 @@ class _HomeState extends State<Home> {
         title: const Text("home Page"),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
-       body: list[_page],
+        body: Center(
+          child: ListView(
+            children: const [
+              ListTile(
+                leading: Icon(Icons.car_rental),
+                title: Text("Car"),
+                trailing: Icon(Icons.more_vert),
+              ),
+              ListTile(
+                leading: Icon(Icons.train),
+                title: Text("Train"),
+                trailing: Icon(Icons.more_vert),
+              ),
+              ListTile(
+                leading: Icon(Icons.flight),
+                title: Text("Flight"),
+                trailing: Icon(Icons.more_vert),
+              ),
+            ],
+          ),
+        ),
+      // body: list[_page],
       // body: IndexedStack(
       //   index: _page,
       //   children: list,
