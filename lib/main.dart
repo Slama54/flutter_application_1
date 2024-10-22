@@ -48,17 +48,17 @@ class _HomeState extends State<Home> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
 
-      body:const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Icon(Icons.headphones),
-            Icon(Icons.search),
-            Icon(Icons.chat),
+      // body:const Center(
+      //   child: Column(
+      //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //     children: [
+      //       Icon(Icons.headphones),
+      //       Icon(Icons.search),
+      //       Icon(Icons.chat),
             
-          ],
-        ),
-      ) ,
+      //     ],
+      //   ),
+      // ) ,
 
 
 
@@ -87,10 +87,10 @@ class _HomeState extends State<Home> {
 
 
       // body: list[_page],
-      // body: IndexedStack(
-      //   index: _page,
-      //   children: list,
-      //),
+      body: IndexedStack(
+        index: _page,
+        children: list,
+      ),
       // body: Container(),
       bottomNavigationBar: CurvedNavigationBar(
           backgroundColor: Colors.blueAccent,
